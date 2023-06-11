@@ -40,7 +40,7 @@ nav a {
     color: #fff; /* cambia el color de los enlaces a blanco */
 }
 
-label {
+.label_menu {
     font-size: large;
     color: #ffffff;
 }
@@ -58,7 +58,6 @@ label {
 /* ---------------------------- */
 
 #venta{
-    background-color: #929697;
     display: inline-block;
     height: auto;
     margin-left: auto;
@@ -144,8 +143,11 @@ label {
   }
   
   .big-text {
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: -8px;
+    margin-bottom: 15px;
+
+    font-size: xx-large;
+    font-weight: 500;
   }
   
   .form-row {
@@ -164,8 +166,6 @@ label {
   .form-control {
     height: 25px;
   }
-  
-label{color: black;}
 
   .total-message {
     margin-top: 10px;
@@ -176,6 +176,29 @@ label{color: black;}
     background-color: green;
     color: white;
   }
+
+/* ---------------------------- */
+/*        Ajustes */
+/* ---------------------------- */
+
+
+#total-msg {
+    text-align: start;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 13px;
+    padding-left: 22px;
+
+    background-color: #cce5ff;
+    border: 1px solid #b6d9fc;
+    border-radius: 5px;
+
+    font-size: medium;
+    font-weight: 490;
+    color: #2964b3;
+}
+
 
 /* ---------------------------- */
 /*        Pie de pagina */

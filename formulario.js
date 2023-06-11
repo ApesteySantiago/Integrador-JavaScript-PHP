@@ -1,10 +1,10 @@
 // Obtener los elementos del DOM
-const formulario = document.getElementById('formulario');
-const cantidadInput = document.getElementById('cantidad');
-const categoriaSelect = document.getElementById('categoria');
-const totalMsg = document.getElementById('total-msg');
-const borrarBtn = document.getElementById('borrar-btn');
-const resumenBtn = document.getElementById('resumen-btn');
+formulario = document.getElementById('formulario');
+cantidadInput = document.getElementById('cantidad');
+categoriaSelect = document.getElementById('categoria');
+totalMsg = document.getElementById('total-msg');
+borrarBtn = document.getElementById('borrar-btn');
+resumenBtn = document.getElementById('resumen-btn');
 
 // Asignar evento de clic al botón de Borrar
 borrarBtn.addEventListener('click', function() {
@@ -13,8 +13,8 @@ borrarBtn.addEventListener('click', function() {
 
 // Asignar evento de clic al botón de Resumen
 resumenBtn.addEventListener('click', function() {
-  const cantidad = parseInt(cantidadInput.value);
-  const categoria = categoriaSelect.value;
+  cantidad = parseInt(cantidadInput.value);
+  categoria = categoriaSelect.value;
   let descuento = 0;
 
   switch (categoria) {
@@ -31,6 +31,6 @@ resumenBtn.addEventListener('click', function() {
       descuento = 0;
   }
 
-  const total = 200 * cantidad * (1 - descuento);
+  const total = 200 * cantidad * (1 - descuento).toFixed(2);
   totalMsg.textContent = `Total a pagar: $${total}`;
 });
