@@ -9,7 +9,6 @@ totalMsg = document.getElementById('total-msg');
 borrarBtn = document.getElementById('borrar-btn');
 resumenBtn = document.getElementById('resumen-btn');
 
-// Asignar evento de clic al botón de Borrar
 borrarBtn.addEventListener('click', function() {
   formulario.reset();
   totalMsg.textContent = 'Total a Pagar: $';
